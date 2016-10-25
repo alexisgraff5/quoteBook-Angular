@@ -10,11 +10,11 @@ angular.module('quoteBook').service('dataService', function() {
     { text: 'What even is a jQuery?', author: 'Tyler S. McGinnis'}
   ];
 
-  this.getData = function() {
+  this.getQuotes = function() {
     return quotes;
   }
 
-  this.addData = function(newQuote) {
+  this.addQuotes = function(newQuote) {
     if(newQuote.text && newQuote.author) {
         quotes.push(newQuote);
       return true;
@@ -22,7 +22,7 @@ angular.module('quoteBook').service('dataService', function() {
     return false;
   }
 
-  this.removeData = function(textToRemove) {
+  this.removeQuotes = function(textToRemove) {
     for (var i = 0; i < quotes.length; i++) {
       if (quotes[i].text.toLowerCase() == textToRemove.toLowerCase()) {
           quotes.splice(i--, 1);
