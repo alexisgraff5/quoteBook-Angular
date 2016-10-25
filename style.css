@@ -1,0 +1,24 @@
+body {
+  background-color: #48C9B0;
+}
+
+.text {
+  font-family: sans-serif;
+}
+
+.author {
+  font-family: serif;
+}
+
+.para {
+  margin: 25px, auto;
+  text-align: center;
+}
+
+.remove {
+
+}
+
+h1 {
+  text-align: center;
+}
